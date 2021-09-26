@@ -1,0 +1,34 @@
+### get all todo
+get http://localhost:3000/todos/?priority=HIGH
+
+### get todo with todoId
+get http://localhost:3000/todos/10/
+
+### add todo
+POST http://localhost:3000/todos/
+
+Content-Type: application/json
+
+{
+  "id": 10,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO"
+}
+
+### update todo
+
+put http://localhost:3000/todos/10/
+
+Content-Type: application/json
+
+{
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO"
+}
+
+### delete todo
+delete http://localhost:3000/todos/3/
+
+###
